@@ -14,7 +14,7 @@ guadagni) senza hardware aggiuntivo, solo con le credenziali dell'app.
 - Endpoint configurati per la regione **EU** (per altre regioni apri una issue).
 
 ## Installazione (HACS)
-1. HACS → Custom repositories → aggiungi `https://github.com/pavia.mauro@gmail.com/ha-sunpower-tcl` come **Integration**.
+1. HACS → Custom repositories → aggiungi `https://github.com/picotto86/ha-sunpower-tcl` come **Integration**.
 2. Installa "SunPower (TCL EMEA)" e riavvia Home Assistant.
 3. Impostazioni → Dispositivi e servizi → Aggiungi integrazione → **SunPower (TCL EMEA)**.
 4. Inserisci email, password e codice paese (es. `IT`). Gli impianti vengono rilevati da soli.
