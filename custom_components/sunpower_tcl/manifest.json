@@ -1,0 +1,12 @@
+{
+  "domain": "sunpower_tcl",
+  "name": "SunPower (TCL EMEA)",
+  "version": "0.1.0",
+  "documentation": "https://github.com/pavia.mauro@gmail.com/ha-sunpower-tcl",
+  "issue_tracker": "https://github.com/pavia.mauro@gmail.com/ha-sunpower-tcl/issues",
+  "codeowners": ["@pavia.mauro@gmail.com"],
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "integration_type": "hub",
+  "requirements": []
+}

@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "SunPower (TCL EMEA)",
+        "description": "Inserisci le credenziali dell'app SunPower.",
+        "data": {
+          "email": "Email",
+          "password": "Password",
+          "country": "Codice paese (es. IT)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Email o password non valide.",
+      "cannot_connect": "Impossibile connettersi al cloud SunPower/TCL.",
+      "unknown": "Errore imprevisto."
+    },
+    "abort": {
+      "already_configured": "Questo account è già configurato."
+    }
+  }
+}
