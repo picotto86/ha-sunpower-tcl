@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC94B"/>
+      <stop offset="1" stop-color="#F7931E"/>
+    </linearGradient>
+  </defs>
+  <!-- raggi -->
+  <g stroke="url(#sun)" stroke-width="13" stroke-linecap="round">
+    <line x1="184" y1="104" x2="208" y2="104"/>
+    <line x1="168" y1="144" x2="185" y2="161"/>
+    <line x1="128" y1="160" x2="128" y2="184"/>
+    <line x1="88"  y1="144" x2="71"  y2="161"/>
+    <line x1="72"  y1="104" x2="48"  y2="104"/>
+    <line x1="88"  y1="64"  x2="71"  y2="47"/>
+    <line x1="128" y1="48"  x2="128" y2="24"/>
+    <line x1="168" y1="64"  x2="185" y2="47"/>
+  </g>
+  <!-- sole -->
+  <circle cx="128" cy="104" r="46" fill="url(#sun)"/>
+  <!-- pannello fotovoltaico -->
+  <g>
+    <polygon points="70,192 186,192 206,238 50,238" fill="#1C3A5E"/>
+    <g stroke="#2E5681" stroke-width="4">
+      <line x1="109" y1="192" x2="102" y2="238"/>
+      <line x1="147" y1="192" x2="154" y2="238"/>
+      <line x1="59"  y1="215" x2="197" y2="215"/>
+    </g>
+  </g>
+</svg>

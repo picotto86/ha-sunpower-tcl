@@ -1,0 +1,51 @@
+name: Segnalazione bug
+description: Segnala un problema con l'integrazione SunPower (TCL EMEA)
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per la segnalazione. Integrazione **non ufficiale**: può rompersi se TCL cambia l'API.
+  - type: input
+    id: ha_version
+    attributes:
+      label: Versione Home Assistant
+      placeholder: "2026.9.4"
+    validations:
+      required: true
+  - type: input
+    id: integration_version
+    attributes:
+      label: Versione integrazione
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: country
+    attributes:
+      label: Codice paese usato
+      placeholder: "IT"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Cosa succede
+      description: Descrivi il problema e cosa ti aspettavi.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log rilevanti
+      description: Impostazioni → Sistema → Log, filtra "sunpower_tcl". **Rimuovi email/password/token.**
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Verifiche
+      options:
+        - label: L'app ufficiale SunPower mostra i dati del mio impianto.
+          required: true
+        - label: Ho rimosso ogni dato sensibile (credenziali/token) dai log allegati.
+          required: true
