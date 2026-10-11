@@ -1,7 +1,7 @@
 {
   "domain": "sunpower_tcl",
   "name": "SunPower (TCL EMEA)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "documentation": "https://github.com/picotto86/ha-sunpower-tcl",
   "issue_tracker": "https://github.com/picotto86/ha-sunpower-tcl/issues",
   "codeowners": ["@picotto86"],
