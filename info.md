@@ -14,6 +14,7 @@ Gli impianti collegati all'account vengono rilevati automaticamente.
 - Stato di carica batteria (%)
 - Energia e guadagno di oggi / mese / anno
 - Stato impianto, Inverter online
+- Energia prelevata/immessa in rete e caricata/scaricata dalla batteria (kWh, calcolata dalle potenze)
 
 I sensori di energia sono compatibili con la **dashboard Energia** di Home Assistant.
 

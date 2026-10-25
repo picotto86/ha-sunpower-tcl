@@ -5,10 +5,11 @@ import logging
 from datetime import timedelta
 
 from homeassistant.config_entries import ConfigEntry
+from homeassistant.exceptions import ConfigEntryAuthFailed
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
 
-from .api import SunPowerApiError, SunPowerTclClient
+from .api import SunPowerApiError, SunPowerAuthError, SunPowerTclClient
 from .const import DEFAULT_SCAN_INTERVAL, DOMAIN
 
 _LOGGER = logging.getLogger(__name__)
@@ -30,5 +31,8 @@ class SunPowerCoordinator(DataUpdateCoordinator[dict[str, dict]]):
     async def _async_update_data(self) -> dict[str, dict]:
         try:
             return await self.hass.async_add_executor_job(self.client.fetch_all)
+        except SunPowerAuthError as err:
+            # credenziali rifiutate: HA sospende il polling e propone la riautenticazione
+            raise ConfigEntryAuthFailed(str(err)) from err
         except SunPowerApiError as err:
             raise UpdateFailed(str(err)) from err

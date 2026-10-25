@@ -10,6 +10,12 @@ CONF_COUNTRY = "country"
 DEFAULT_COUNTRY = "IT"
 DEFAULT_SCAN_INTERVAL = 30  # secondi
 
+# Contatori di energia calcolati dalle potenze (vedi sensor.py).
+ENERGY_MAX_GAP = 600  # secondi: buchi più lunghi tra due letture non vengono integrati
+# Verso di meterPower: True se positivo = prelievo dalla rete. Da verificare con FV attivo
+# (in immissione il segno deve risultare opposto); se è al contrario, metti False.
+GRID_POSITIVE_IS_IMPORT = True
+
 # Endpoint TCL (regione EU). Gli impianti vengono scoperti dopo il login.
 ACCOUNT_BASE = "https://multi-eu-prod.tcljd.com"
 DATA_BASE = "https://prod-eu.aws.tcljd.com"

@@ -9,6 +9,13 @@
           "password": "Password",
           "country": "Country code (e.g. IT)"
         }
+      },
+      "reauth_confirm": {
+        "title": "Reauthenticate SunPower",
+        "description": "The SunPower cloud rejected the credentials for {email}. Enter the current SunPower app password.",
+        "data": {
+          "password": "Password"
+        }
       }
     },
     "error": {
@@ -17,7 +24,8 @@
       "unknown": "Unexpected error."
     },
     "abort": {
-      "already_configured": "This account is already configured."
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Reauthentication successful."
     }
   }
 }

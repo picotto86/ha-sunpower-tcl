@@ -8,5 +8,5 @@
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/picotto86/ha-sunpower-tcl/issues",
   "requirements": [],
-  "version": "0.1.2"
+  "version": "0.1.4"
 }

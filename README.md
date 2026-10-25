@@ -21,7 +21,10 @@ guadagni) senza hardware aggiuntivo, solo con le credenziali dell'app.
 
 ## Entità (per impianto)
 Potenza FV / carico / rete / batteria (W), Batteria (%), Energia e Guadagno oggi/mese/anno,
-Stato impianto, Inverter online. I sensori di energia sono compatibili con la dashboard Energia.
+Stato impianto, Inverter online.
+Energia prelevata/immessa in rete e caricata/scaricata dalla batteria (kWh), calcolate
+integrando le potenze istantanee (l'API non le fornisce). I sensori di energia sono
+compatibili con la dashboard Energia.
 
 ## Privacy
 Le credenziali restano in Home Assistant e vengono usate solo verso i server SunPower/TCL.
